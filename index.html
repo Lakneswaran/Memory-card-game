@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="description" content="Memory card">
+    <meta name="keywords" content="HTML, CSS & JS">
+    <meta name="author" content="Lakneswaran Krishnan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://cdn.glitch.com/85de6182-354b-4c86-bf82-84655187b399%2Flogo.svg?v=1632234356912"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/memorygame.css">
+
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QFB7RM72X2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QFB7RM72X2');
+    </script>
+    <title>Pokedex</title>
+
+  </head>
+  <body>
+
+    <div class="content ">
+        <section class="title">
+
+            <div>
+                <span><h1 id="title">Memory Game</h1></span>
+            </div> 
+        </section>
+    </div>
+
+    <section class="memory-game">
+      <div class="memory-card" data-framework="anime">
+        <img class="front-face" src="assets/girl.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="anime">
+        <img class="front-face" src="assets/girl.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="naruto">
+        <img class="front-face" src="assets/naruto.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="naruto">
+        <img class="front-face" src="assets/naruto.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="luffy">
+        <img class="front-face" src="assets/luffy.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="luffy">
+        <img class="front-face" src="assets/luffy.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="titans">
+        <img class="front-face" src="assets/eren.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="titans">
+        <img class="front-face" src="assets/eren.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="eren">
+        <img class="front-face" src="assets/mikasa.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="eren">
+        <img class="front-face" src="assets/mikasa.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="fairy">
+        <img class="front-face" src="assets/natsu.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+      <div class="memory-card" data-framework="fairy">
+        <img class="front-face" src="assets/natsu.png" alt="front-side" />
+        <img class="back-face" src="assets/choose.png"  alt="back-side" /> 
+      </div>
+    </section>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./memorygame.js"></script>
+    <script>
+      let name = document.querySelector('.name_company');
+    
+    const navAnim = () => {
+      let move = window.scrollY;
+    
+      if (move > 10) {
+        name.style.opacity = '0';
+        name.style.pointerEvents = 'none';
+      } else {
+        name.style.opacity = '1';
+        name.style.pointerEvents = 'all';
+      }
+    }
+    
+    window.addEventListener('scroll', navAnim)
+    </script>
+
+  </body>
+</html>
